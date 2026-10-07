@@ -1,0 +1,515 @@
+
+/* =========================
+   ESTILO GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.main-header {
+    background: linear-gradient(135deg, #111111, #1b1b1b);
+    min-height: 600px;
+}
+
+
+/* =========================
+   BARRA DE NAVEGACIÓN
+========================= */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: #151515;
+    border-bottom: 2px solid #00ff66;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: #00ff66;
+    font-size: 30px;
+}
+
+
+/* MENÚ */
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #00ff66;
+}
+
+
+/* =========================
+   BOTÓN DEL MENÚ
+========================= */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+
+/* =========================
+   MENÚ DESPLEGABLE
+========================= */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-btn:hover {
+    color: #00ff66;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    min-width: 190px;
+    background-color: #202020;
+    border: 1px solid #00ff66;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 13px;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #00ff66;
+    color: black;
+}
+
+
+/* =========================
+   PRESENTACIÓN
+========================= */
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+
+/* BOTÓN PRINCIPAL */
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background-color: #00ff66;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #00cc52;
+}
+
+
+/* =========================
+   SECCIÓN DE SERVICIOS
+========================= */
+
+.services-section {
+    padding: 70px 7%;
+    background-color: #101010;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 45px;
+    color: #00ff66;
+}
+
+
+/* CONTENEDOR */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.service-card {
+    background-color: #1b1b1b;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #00ff66;
+    box-shadow: 0 0 20px rgba(0, 255, 102, 0.25);
+}
+
+
+/* =========================
+   IMAGEN DE TARJETA
+========================= */
+
+.card-image {
+    position: relative;
+    height: 210px;
+    background-color: #080808;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ETIQUETA */
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #00ff66;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CUERPO DE TARJETA
+========================= */
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    color: #00ff66;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body li {
+    margin: 12px 0;
+    color: #dddddd;
+    line-height: 1.4;
+}
+
+.card-body li i {
+    color: #00ff66;
+    margin-right: 7px;
+}
+
+
+/* BOTÓN DE TARJETA */
+
+.btn-card {
+    border: none;
+    background-color: #00ff66;
+    color: black;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-card:hover {
+    background-color: #00cc52;
+}
+
+
+/* =========================
+   GUÍAS
+========================= */
+
+.info-section {
+    padding: 70px 7%;
+    background-color: #151515;
+}
+
+.info-section h2 {
+    text-align: center;
+    color: #00ff66;
+    margin-bottom: 40px;
+}
+
+
+/* CONTENEDOR DE CONSEJOS */
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* CONSEJO */
+
+.tip-box {
+    background-color: #202020;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.tip-box:hover {
+    border-color: #00ff66;
+    transform: translateY(-5px);
+}
+
+.tip-box > i {
+    color: #00ff66;
+    font-size: 35px;
+}
+
+.tip-box h4 {
+    font-size: 20px;
+}
+
+.tip-box p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* CONTENIDO DEL MODAL */
+
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 12% auto;
+    padding: 30px;
+    background-color: #1b1b1b;
+    border: 2px solid #00ff66;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.3);
+}
+
+.modal-content h3 {
+    color: #00ff66;
+}
+
+.modal-content p {
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+
+/* BOTÓN CERRAR */
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-modal:hover {
+    color: #00ff66;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+.main-footer {
+    background-color: #080808;
+    padding: 50px 7% 20px;
+    border-top: 2px solid #00ff66;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-info,
+.footer-links {
+    max-width: 500px;
+}
+
+.footer-info h3,
+.footer-links h4 {
+    color: #00ff66;
+}
+
+.footer-info p,
+.footer-links p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.footer-links i {
+    color: #00ff66;
+    margin-right: 8px;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #888;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+}
+
